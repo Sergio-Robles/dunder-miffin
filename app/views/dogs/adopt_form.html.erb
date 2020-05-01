@@ -1,0 +1,5 @@
+<h1> You are about to adopt  <%= @dog.name %>!! </h1>
+
+<%= form_tag '/adopt/#{@dog.id}' method: "patch" do %>
+<%= collection_select @dog, :employee_id, @employees, :id, :first_name %>
+<% end %>

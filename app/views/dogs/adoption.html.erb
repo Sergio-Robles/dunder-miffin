@@ -1,0 +1,6 @@
+<h3> Dogs Up For Adoption: </h3>
+
+<% @dogs.each do |d| %>
+<p> <%= d.name %>  - <%= link_to "Adopt this dog", "/dogs/#{@dogs.id}/adopt" %></p>
+
+<% end %> 
